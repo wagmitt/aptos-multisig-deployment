@@ -1,0 +1,17 @@
+[package]
+name = "multisig_code"
+version = "1.0.0"
+upgrade_policy = "compatible"
+authors = []
+
+[addresses]
+multisig_code = "_"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]

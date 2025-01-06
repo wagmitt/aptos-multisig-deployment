@@ -1,0 +1,17 @@
+.aptos/
+build/
+
+*.key
+*.key.pub
+
+*.png
+
+docs/
+
+.env
+
+keys
+
+publication.json
+
+deployment/
