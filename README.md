@@ -1,6 +1,6 @@
 # Aptos Multisig Contract Deployment Tutorial
 
-This repository demonstrates how to deploy and manage a Move smart contract using a multisig wallet on the Aptos blockchain. The example includes a simple "Hello World" contract that can be upgraded through multisig governance.
+This repository demonstrates how to deploy and upgrade a Move smart contract as a **code object** using a **multisig wallet** on the Aptos blockchain. The example includes a simple "Hello World" contract that can be upgraded through multisig governance.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ This repository demonstrates how to deploy and manage a Move smart contract usin
 ### 1. Setup Signers
 
 ```bash
-./scripts/0_setup_signers.sh
+bash ./scripts/0_setup_signers.sh
 ```
 
 This script will:
@@ -37,7 +37,7 @@ This script will:
 ### 2. Setup Multisig
 
 ```bash
-./scripts/1_setup_multisig.sh
+bash ./scripts/1_setup_multisig.sh
 ```
 
 Creates a 2-of-2 multisig account that will own and control the smart contract.
@@ -45,7 +45,7 @@ Creates a 2-of-2 multisig account that will own and control the smart contract.
 ### 3. Deploy Code Object
 
 ```bash
-./scripts/2_deploy_code_object.sh
+bash ./scripts/2_deploy_code_object.sh
 ```
 
 Deploys the initial version of the Hello World contract.
@@ -53,7 +53,7 @@ Deploys the initial version of the Hello World contract.
 ### 4. Transfer Code Object
 
 ```bash
-./scripts/3_transfer_code_object.sh
+bash ./scripts/3_transfer_code_object.sh
 ```
 
 Transfers ownership of the deployed contract to the multisig account.
@@ -61,7 +61,7 @@ Transfers ownership of the deployed contract to the multisig account.
 ### 5. Upgrade Code Object (Optional)
 
 ```bash
-./scripts/4_upgrade_code_object.sh
+bash ./scripts/4_upgrade_code_object.sh
 ```
 
 Demonstrates how to upgrade the contract through the multisig.
